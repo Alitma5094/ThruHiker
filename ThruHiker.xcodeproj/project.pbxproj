@@ -1,0 +1,445 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9F2032AD2A5C609000739D54 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2032AC2A5C609000739D54 /* DataController.swift */; };
+		9F3AC3D72A374B5C008D3BE8 /* data.geodatabase in Resources */ = {isa = PBXBuildFile; fileRef = 9F3AC3D62A374B5C008D3BE8 /* data.geodatabase */; };
+		9FA6A5AB2A587CA000B47345 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA6A5AA2A587CA000B47345 /* Types.swift */; };
+		9FA6A5AD2A587D5000B47345 /* JourneysCreate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA6A5AC2A587D5000B47345 /* JourneysCreate.swift */; };
+		9FA6A5AF2A587E4400B47345 /* JourneysDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA6A5AE2A587E4400B47345 /* JourneysDetail.swift */; };
+		9FCEDB3B2A5C57C4002DE1FC /* ThruHiker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9FCEDB392A5C57C4002DE1FC /* ThruHiker.xcdatamodeld */; };
+		9FCEDB4A2A5C5CBB002DE1FC /* Journey+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCEDB462A5C5CBB002DE1FC /* Journey+CoreDataClass.swift */; };
+		9FCEDB4B2A5C5CBB002DE1FC /* Journey+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCEDB472A5C5CBB002DE1FC /* Journey+CoreDataProperties.swift */; };
+		9FCEDB4E2A5C5D16002DE1FC /* TrailLocationSave+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCEDB4C2A5C5D16002DE1FC /* TrailLocationSave+CoreDataClass.swift */; };
+		9FCEDB4F2A5C5D16002DE1FC /* TrailLocationSave+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCEDB4D2A5C5D16002DE1FC /* TrailLocationSave+CoreDataProperties.swift */; };
+		9FD5F2BD2A4496A900CEF2A6 /* JourneysList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD5F2BC2A4496A900CEF2A6 /* JourneysList.swift */; };
+		9FD9B07B2A309C8700FC4C57 /* ThruHikerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD9B07A2A309C8700FC4C57 /* ThruHikerApp.swift */; };
+		9FD9B07D2A309C8700FC4C57 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD9B07C2A309C8700FC4C57 /* ContentView.swift */; };
+		9FD9B07F2A309C8800FC4C57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FD9B07E2A309C8800FC4C57 /* Assets.xcassets */; };
+		9FD9B0822A309C8800FC4C57 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FD9B0812A309C8800FC4C57 /* Preview Assets.xcassets */; };
+		9FD9B0892A309C9D00FC4C57 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD9B0882A309C9D00FC4C57 /* Database.swift */; };
+		9FD9B0922A309D8200FC4C57 /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 9FD9B0912A309D8200FC4C57 /* SQLite */; };
+		9FF415E22A43372E007EC1A0 /* LocationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF415E12A43372E007EC1A0 /* LocationDetailView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9F2032AC2A5C609000739D54 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		9F3AC3D62A374B5C008D3BE8 /* data.geodatabase */ = {isa = PBXFileReference; lastKnownFileType = file; path = data.geodatabase; sourceTree = "<group>"; };
+		9FA6A5AA2A587CA000B47345 /* Types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
+		9FA6A5AC2A587D5000B47345 /* JourneysCreate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneysCreate.swift; sourceTree = "<group>"; };
+		9FA6A5AE2A587E4400B47345 /* JourneysDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneysDetail.swift; sourceTree = "<group>"; };
+		9FCEDB3A2A5C57C4002DE1FC /* ThruHiker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ThruHiker.xcdatamodel; sourceTree = "<group>"; };
+		9FCEDB462A5C5CBB002DE1FC /* Journey+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Journey+CoreDataClass.swift"; sourceTree = "<group>"; };
+		9FCEDB472A5C5CBB002DE1FC /* Journey+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Journey+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		9FCEDB4C2A5C5D16002DE1FC /* TrailLocationSave+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrailLocationSave+CoreDataClass.swift"; sourceTree = "<group>"; };
+		9FCEDB4D2A5C5D16002DE1FC /* TrailLocationSave+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrailLocationSave+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		9FD5F2BC2A4496A900CEF2A6 /* JourneysList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneysList.swift; sourceTree = "<group>"; };
+		9FD9B0772A309C8700FC4C57 /* ThruHiker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThruHiker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FD9B07A2A309C8700FC4C57 /* ThruHikerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThruHikerApp.swift; sourceTree = "<group>"; };
+		9FD9B07C2A309C8700FC4C57 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9FD9B07E2A309C8800FC4C57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9FD9B0812A309C8800FC4C57 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9FD9B0882A309C9D00FC4C57 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		9FF415E12A43372E007EC1A0 /* LocationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9FD9B0742A309C8700FC4C57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FD9B0922A309D8200FC4C57 /* SQLite in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9FD9B06E2A309C8700FC4C57 = {
+			isa = PBXGroup;
+			children = (
+				9FD9B0792A309C8700FC4C57 /* ThruHiker */,
+				9FD9B0782A309C8700FC4C57 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9FD9B0782A309C8700FC4C57 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9FD9B0772A309C8700FC4C57 /* ThruHiker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9FD9B0792A309C8700FC4C57 /* ThruHiker */ = {
+			isa = PBXGroup;
+			children = (
+				9FCEDB4C2A5C5D16002DE1FC /* TrailLocationSave+CoreDataClass.swift */,
+				9FCEDB4D2A5C5D16002DE1FC /* TrailLocationSave+CoreDataProperties.swift */,
+				9FCEDB462A5C5CBB002DE1FC /* Journey+CoreDataClass.swift */,
+				9FCEDB472A5C5CBB002DE1FC /* Journey+CoreDataProperties.swift */,
+				9FCEDB392A5C57C4002DE1FC /* ThruHiker.xcdatamodeld */,
+				9FF415E12A43372E007EC1A0 /* LocationDetailView.swift */,
+				9F3AC3D62A374B5C008D3BE8 /* data.geodatabase */,
+				9FD9B07A2A309C8700FC4C57 /* ThruHikerApp.swift */,
+				9FD9B0882A309C9D00FC4C57 /* Database.swift */,
+				9FD9B07C2A309C8700FC4C57 /* ContentView.swift */,
+				9FD5F2BC2A4496A900CEF2A6 /* JourneysList.swift */,
+				9FA6A5AE2A587E4400B47345 /* JourneysDetail.swift */,
+				9FA6A5AC2A587D5000B47345 /* JourneysCreate.swift */,
+				9FA6A5AA2A587CA000B47345 /* Types.swift */,
+				9FD9B07E2A309C8800FC4C57 /* Assets.xcassets */,
+				9FD9B0802A309C8800FC4C57 /* Preview Content */,
+				9F2032AC2A5C609000739D54 /* DataController.swift */,
+			);
+			path = ThruHiker;
+			sourceTree = "<group>";
+		};
+		9FD9B0802A309C8800FC4C57 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				9FD9B0812A309C8800FC4C57 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9FD9B0762A309C8700FC4C57 /* ThruHiker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FD9B0852A309C8800FC4C57 /* Build configuration list for PBXNativeTarget "ThruHiker" */;
+			buildPhases = (
+				9FD9B0732A309C8700FC4C57 /* Sources */,
+				9FD9B0742A309C8700FC4C57 /* Frameworks */,
+				9FD9B0752A309C8700FC4C57 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ThruHiker;
+			packageProductDependencies = (
+				9FD9B0912A309D8200FC4C57 /* SQLite */,
+			);
+			productName = ThruHiker;
+			productReference = 9FD9B0772A309C8700FC4C57 /* ThruHiker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9FD9B06F2A309C8700FC4C57 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					9FD9B0762A309C8700FC4C57 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 9FD9B0722A309C8700FC4C57 /* Build configuration list for PBXProject "ThruHiker" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9FD9B06E2A309C8700FC4C57;
+			packageReferences = (
+				9FD9B0902A309D8200FC4C57 /* XCRemoteSwiftPackageReference "SQLite.swift" */,
+			);
+			productRefGroup = 9FD9B0782A309C8700FC4C57 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9FD9B0762A309C8700FC4C57 /* ThruHiker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9FD9B0752A309C8700FC4C57 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F3AC3D72A374B5C008D3BE8 /* data.geodatabase in Resources */,
+				9FD9B0822A309C8800FC4C57 /* Preview Assets.xcassets in Resources */,
+				9FD9B07F2A309C8800FC4C57 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9FD9B0732A309C8700FC4C57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FCEDB4B2A5C5CBB002DE1FC /* Journey+CoreDataProperties.swift in Sources */,
+				9FCEDB3B2A5C57C4002DE1FC /* ThruHiker.xcdatamodeld in Sources */,
+				9FD9B07D2A309C8700FC4C57 /* ContentView.swift in Sources */,
+				9FA6A5AF2A587E4400B47345 /* JourneysDetail.swift in Sources */,
+				9FCEDB4E2A5C5D16002DE1FC /* TrailLocationSave+CoreDataClass.swift in Sources */,
+				9FF415E22A43372E007EC1A0 /* LocationDetailView.swift in Sources */,
+				9FD9B0892A309C9D00FC4C57 /* Database.swift in Sources */,
+				9F2032AD2A5C609000739D54 /* DataController.swift in Sources */,
+				9FA6A5AB2A587CA000B47345 /* Types.swift in Sources */,
+				9FCEDB4F2A5C5D16002DE1FC /* TrailLocationSave+CoreDataProperties.swift in Sources */,
+				9FD9B07B2A309C8700FC4C57 /* ThruHikerApp.swift in Sources */,
+				9FD5F2BD2A4496A900CEF2A6 /* JourneysList.swift in Sources */,
+				9FCEDB4A2A5C5CBB002DE1FC /* Journey+CoreDataClass.swift in Sources */,
+				9FA6A5AD2A587D5000B47345 /* JourneysCreate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9FD9B0832A309C8800FC4C57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9FD9B0842A309C8800FC4C57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9FD9B0862A309C8800FC4C57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ThruHiker/Preview Content\"";
+				DEVELOPMENT_TEAM = JK848CK6FL;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Me want DATA!!";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.simplifialltech.ThruHiker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9FD9B0872A309C8800FC4C57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ThruHiker/Preview Content\"";
+				DEVELOPMENT_TEAM = JK848CK6FL;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Me want DATA!!";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.simplifialltech.ThruHiker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9FD9B0722A309C8700FC4C57 /* Build configuration list for PBXProject "ThruHiker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FD9B0832A309C8800FC4C57 /* Debug */,
+				9FD9B0842A309C8800FC4C57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9FD9B0852A309C8800FC4C57 /* Build configuration list for PBXNativeTarget "ThruHiker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FD9B0862A309C8800FC4C57 /* Debug */,
+				9FD9B0872A309C8800FC4C57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9FD9B0902A309D8200FC4C57 /* XCRemoteSwiftPackageReference "SQLite.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stephencelis/SQLite.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.14.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9FD9B0912A309D8200FC4C57 /* SQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9FD9B0902A309D8200FC4C57 /* XCRemoteSwiftPackageReference "SQLite.swift" */;
+			productName = SQLite;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		9FCEDB392A5C57C4002DE1FC /* ThruHiker.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9FCEDB3A2A5C57C4002DE1FC /* ThruHiker.xcdatamodel */,
+			);
+			currentVersion = 9FCEDB3A2A5C57C4002DE1FC /* ThruHiker.xcdatamodel */;
+			path = ThruHiker.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9FD9B06F2A309C8700FC4C57 /* Project object */;
+}
