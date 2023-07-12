@@ -91,32 +91,6 @@ struct ContentView: View {
             JourneysList()
         }
     }
-    
-    private func markerSystemImage(for type: TrailLocationType) -> String {
-        switch type {
-        case .campsite:
-            return "tent.fill"
-        case .privie:
-            return "toilet.fill"
-        case .shelter:
-            return "house.lodge.fill"
-        case .vista:
-            return "mountain.2.fill"
-        }
-    }
-    
-    private func markerColor(for type: TrailLocationType) -> Color {
-        switch type {
-        case .campsite:
-            return .red
-        case .privie:
-            return .blue
-        case .shelter:
-            return .green
-        case .vista:
-            return .yellow
-        }
-    }
 }
 
 #Preview {

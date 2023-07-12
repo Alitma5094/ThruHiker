@@ -10,55 +10,49 @@ import SwiftData
 
 struct JourneysList: View {
     @State private var showAddSheet = false
-    @Environment(\.managedObjectContext) var moc
-    @FetchRequest(sortDescriptors: []) var journeys: FetchedResults<Journey>
+    @Query private var journeys: [Journey]
+    @Environment(\.modelContext) private var context
     
     var body: some View {
         NavigationStack {
-            VStack {
-                if (journeys.count > 0) {
-                    List {
-                        ForEach(journeys) { journey in
-                            NavigationLink {
-                                JourneysDetail(journey: journey)
-                            } label: {
-                                Text(journey.unwrappedName)
-                            }
-                        }
-                        .onDelete(perform: deleteJourney)
-                    }
-                } else {
-                    Button("Add a Journeys") {
-                        showAddSheet = true
+            List {
+                ForEach(journeys) { journey in
+                    NavigationLink {
+                        JourneysDetail(journey: journey)
+                    } label: {
+                        Text(journey.name)
                     }
                 }
+                .onDelete(perform: { indexSet in
+                    indexSet.forEach { index in
+                        let item = journeys[index]
+                        context.delete(item)
+                        do {
+                            try context.save()
+                        } catch {
+                            print(error.localizedDescription)
+                        }
+                    }
+                })
             }
-            .navigationTitle("Journeys")
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
                     EditButton()
                 }
+                
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button {
-                        showAddSheet = true
+                        showAddSheet.toggle()
                     } label: {
-                        Image(systemName: "plus")
+                        Label("Add Journey", systemImage: "plus")
                     }
                 }
             }
+            .navigationTitle("Journeys")
             .sheet(isPresented: $showAddSheet) {
                 JourneysCreate()
             }
         }
-    }
-    
-    func deleteJourney(offsets: IndexSet) {
-        // TODO: Delete Journey
-//        withAnimation {
-//            for index in offsets {
-//                context.delete(journeys[index])
-//            }
-//        }
     }
 }
 

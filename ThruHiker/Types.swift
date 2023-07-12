@@ -7,6 +7,7 @@
 
 import Foundation
 import CoreLocation
+import SwiftData
 
 enum TrailLocationType: String {
     case campsite
@@ -32,20 +33,35 @@ struct TrailLocation: Identifiable, Hashable {
     }
 }
 
+@Model
+final class TrailLocationSave {
+    var objectid: Int
+    var name: String
+    var latitude: Double
+    var longitude: Double
+    var type: String
+    var images: [URL?]
+    @Relationship(inverse: \Journey.locations)
+    
+    init(objectid: Int, name: String, latitude: Double, longitude: Double, type: String, images: [URL?]) {
+        self.objectid = objectid
+        self.name = name
+        self.latitude = latitude
+        self.longitude = longitude
+        self.type = type
+        self.images = images
+    }
+    
+}
 
-//@Model
-//class Journey {
-//    var name: String
-//    var startDate: Date
-//    var locations: [Dictionary<String, String>]
-//    
-//    init(name: String, startDate: Date, locations: [TrailLocation]) {
-//        self.name = name
-//        self.startDate = startDate
-//        
-//        for location in locations {
-//            self.locations.append(["type": location.type.rawValue, "id": String(location.objectid)])
-//        }
-////        self.locations = locations
-//    }
-//}
+@Model
+final class Journey {
+    var name: String
+    var startDate: Date
+    @Relationship(.cascade) var locations: [TrailLocationSave]
+    
+    init(name: String, startDate: Date) {
+        self.name = name
+        self.startDate = startDate
+    }
+}

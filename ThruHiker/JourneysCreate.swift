@@ -10,9 +10,10 @@ import SwiftUI
 
 struct JourneysCreate: View {
     @Environment(\.dismiss) var dismiss
+    @Environment(\.modelContext) var context
+    
     @State private var name = ""
     @State private var date = Date.now
-    @Environment(\.managedObjectContext) var moc
     
     var body: some View {
         NavigationStack {
@@ -28,10 +29,7 @@ struct JourneysCreate: View {
                 
                 Section {
                     Button("Save") {
-                        let newJourney = Journey(context: moc)
-                        newJourney.name = name
-                        newJourney.startDate = date
-                        try? moc.save()
+                        context.insert(Journey(name: name, startDate: date))
                         dismiss()
                     }
                 }
@@ -43,4 +41,5 @@ struct JourneysCreate: View {
 
 #Preview {
     JourneysCreate()
+        .modelContainer(for: Journey.self)
 }

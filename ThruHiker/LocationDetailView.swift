@@ -6,12 +6,12 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct LocationDetailView: View {
     let site: TrailLocation
     @State private var showingDialog = false
-    @Environment(\.managedObjectContext) var moc
-    @FetchRequest(sortDescriptors: []) var journeys: FetchedResults<Journey>
+    @Query private var journeys: [Journey]
     
     
     var colums = [
@@ -49,24 +49,14 @@ struct LocationDetailView: View {
             .navigationBarTitleDisplayMode(.inline)
             .confirmationDialog("Select a journey", isPresented: $showingDialog) {
                 ForEach(journeys) { journey in
-                    Button(journey.unwrappedName) {
-                        addToJouney(journey)
+                    Button(journey.name) {
+                        journey.locations.append(TrailLocationSave(objectid: site.objectid, name: site.name, latitude: site.latitude, longitude: site.longitude, type: site.type.rawValue, images: site.images))
                     }
                 }
                 
                 Button("Cancel", role: .cancel) { }
             }
         }
-    }
-    
-    func addToJouney(_ journey: Journey) {
-        let newLocSave = TrailLocationSave(context: moc)
-        newLocSave.objectid = String(site.objectid)
-        newLocSave.type = site.type.rawValue
-        newLocSave.index = Int16(journey.unwrappedLocations.count + 1)
-        newLocSave.journey = journey
-        
-        try? moc.save()
     }
 }
 

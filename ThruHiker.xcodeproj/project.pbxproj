@@ -7,16 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9F2032AD2A5C609000739D54 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2032AC2A5C609000739D54 /* DataController.swift */; };
 		9F3AC3D72A374B5C008D3BE8 /* data.geodatabase in Resources */ = {isa = PBXBuildFile; fileRef = 9F3AC3D62A374B5C008D3BE8 /* data.geodatabase */; };
 		9FA6A5AB2A587CA000B47345 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA6A5AA2A587CA000B47345 /* Types.swift */; };
 		9FA6A5AD2A587D5000B47345 /* JourneysCreate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA6A5AC2A587D5000B47345 /* JourneysCreate.swift */; };
 		9FA6A5AF2A587E4400B47345 /* JourneysDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA6A5AE2A587E4400B47345 /* JourneysDetail.swift */; };
-		9FCEDB3B2A5C57C4002DE1FC /* ThruHiker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9FCEDB392A5C57C4002DE1FC /* ThruHiker.xcdatamodeld */; };
-		9FCEDB4A2A5C5CBB002DE1FC /* Journey+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCEDB462A5C5CBB002DE1FC /* Journey+CoreDataClass.swift */; };
-		9FCEDB4B2A5C5CBB002DE1FC /* Journey+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCEDB472A5C5CBB002DE1FC /* Journey+CoreDataProperties.swift */; };
-		9FCEDB4E2A5C5D16002DE1FC /* TrailLocationSave+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCEDB4C2A5C5D16002DE1FC /* TrailLocationSave+CoreDataClass.swift */; };
-		9FCEDB4F2A5C5D16002DE1FC /* TrailLocationSave+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCEDB4D2A5C5D16002DE1FC /* TrailLocationSave+CoreDataProperties.swift */; };
+		9FC9B6A12A5F165100764CFC /* utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC9B6A02A5F165100764CFC /* utils.swift */; };
 		9FD5F2BD2A4496A900CEF2A6 /* JourneysList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD5F2BC2A4496A900CEF2A6 /* JourneysList.swift */; };
 		9FD9B07B2A309C8700FC4C57 /* ThruHikerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD9B07A2A309C8700FC4C57 /* ThruHikerApp.swift */; };
 		9FD9B07D2A309C8700FC4C57 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD9B07C2A309C8700FC4C57 /* ContentView.swift */; };
@@ -28,16 +23,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9F2032AC2A5C609000739D54 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		9F3AC3D62A374B5C008D3BE8 /* data.geodatabase */ = {isa = PBXFileReference; lastKnownFileType = file; path = data.geodatabase; sourceTree = "<group>"; };
 		9FA6A5AA2A587CA000B47345 /* Types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
 		9FA6A5AC2A587D5000B47345 /* JourneysCreate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneysCreate.swift; sourceTree = "<group>"; };
 		9FA6A5AE2A587E4400B47345 /* JourneysDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneysDetail.swift; sourceTree = "<group>"; };
-		9FCEDB3A2A5C57C4002DE1FC /* ThruHiker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ThruHiker.xcdatamodel; sourceTree = "<group>"; };
-		9FCEDB462A5C5CBB002DE1FC /* Journey+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Journey+CoreDataClass.swift"; sourceTree = "<group>"; };
-		9FCEDB472A5C5CBB002DE1FC /* Journey+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Journey+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		9FCEDB4C2A5C5D16002DE1FC /* TrailLocationSave+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrailLocationSave+CoreDataClass.swift"; sourceTree = "<group>"; };
-		9FCEDB4D2A5C5D16002DE1FC /* TrailLocationSave+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrailLocationSave+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		9FC9B6A02A5F165100764CFC /* utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = utils.swift; sourceTree = "<group>"; };
 		9FD5F2BC2A4496A900CEF2A6 /* JourneysList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneysList.swift; sourceTree = "<group>"; };
 		9FD9B0772A309C8700FC4C57 /* ThruHiker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThruHiker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FD9B07A2A309C8700FC4C57 /* ThruHikerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThruHikerApp.swift; sourceTree = "<group>"; };
@@ -79,11 +69,6 @@
 		9FD9B0792A309C8700FC4C57 /* ThruHiker */ = {
 			isa = PBXGroup;
 			children = (
-				9FCEDB4C2A5C5D16002DE1FC /* TrailLocationSave+CoreDataClass.swift */,
-				9FCEDB4D2A5C5D16002DE1FC /* TrailLocationSave+CoreDataProperties.swift */,
-				9FCEDB462A5C5CBB002DE1FC /* Journey+CoreDataClass.swift */,
-				9FCEDB472A5C5CBB002DE1FC /* Journey+CoreDataProperties.swift */,
-				9FCEDB392A5C57C4002DE1FC /* ThruHiker.xcdatamodeld */,
 				9FF415E12A43372E007EC1A0 /* LocationDetailView.swift */,
 				9F3AC3D62A374B5C008D3BE8 /* data.geodatabase */,
 				9FD9B07A2A309C8700FC4C57 /* ThruHikerApp.swift */,
@@ -95,7 +80,7 @@
 				9FA6A5AA2A587CA000B47345 /* Types.swift */,
 				9FD9B07E2A309C8800FC4C57 /* Assets.xcassets */,
 				9FD9B0802A309C8800FC4C57 /* Preview Content */,
-				9F2032AC2A5C609000739D54 /* DataController.swift */,
+				9FC9B6A02A5F165100764CFC /* utils.swift */,
 			);
 			path = ThruHiker;
 			sourceTree = "<group>";
@@ -185,19 +170,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FCEDB4B2A5C5CBB002DE1FC /* Journey+CoreDataProperties.swift in Sources */,
-				9FCEDB3B2A5C57C4002DE1FC /* ThruHiker.xcdatamodeld in Sources */,
+				9FC9B6A12A5F165100764CFC /* utils.swift in Sources */,
 				9FD9B07D2A309C8700FC4C57 /* ContentView.swift in Sources */,
 				9FA6A5AF2A587E4400B47345 /* JourneysDetail.swift in Sources */,
-				9FCEDB4E2A5C5D16002DE1FC /* TrailLocationSave+CoreDataClass.swift in Sources */,
 				9FF415E22A43372E007EC1A0 /* LocationDetailView.swift in Sources */,
 				9FD9B0892A309C9D00FC4C57 /* Database.swift in Sources */,
-				9F2032AD2A5C609000739D54 /* DataController.swift in Sources */,
 				9FA6A5AB2A587CA000B47345 /* Types.swift in Sources */,
-				9FCEDB4F2A5C5D16002DE1FC /* TrailLocationSave+CoreDataProperties.swift in Sources */,
 				9FD9B07B2A309C8700FC4C57 /* ThruHikerApp.swift in Sources */,
 				9FD5F2BD2A4496A900CEF2A6 /* JourneysList.swift in Sources */,
-				9FCEDB4A2A5C5CBB002DE1FC /* Journey+CoreDataClass.swift in Sources */,
 				9FA6A5AD2A587D5000B47345 /* JourneysCreate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -427,19 +407,6 @@
 			productName = SQLite;
 		};
 /* End XCSwiftPackageProductDependency section */
-
-/* Begin XCVersionGroup section */
-		9FCEDB392A5C57C4002DE1FC /* ThruHiker.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				9FCEDB3A2A5C57C4002DE1FC /* ThruHiker.xcdatamodel */,
-			);
-			currentVersion = 9FCEDB3A2A5C57C4002DE1FC /* ThruHiker.xcdatamodel */;
-			path = ThruHiker.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 9FD9B06F2A309C8700FC4C57 /* Project object */;
 }

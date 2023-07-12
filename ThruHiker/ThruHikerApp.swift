@@ -6,15 +6,14 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct ThruHikerApp: App {
-    @StateObject private var dataController = DataController()
-    
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environment(\.managedObjectContext, dataController.container.viewContext)
+                .modelContainer(for: [Journey.self, TrailLocationSave.self])
         }
     }
 }
